@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>511120238</title>
+<script src="jquery-3.7.1.min.js"></script>
+<style>
+  #textSize {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #000;
+  }
+</style>
+<script>
+  $(document).ready(function() {
+    // 监听滑块输入
+    $('#t1').on('input', function() {
+      // 获取滑块值
+      var fontSize = $(this).val() + 'px';
+      // 设置文本字体大小
+      $('#textSize').css('font-size', fontSize);
+    });
+
+    $('#red_btn').click(function(){
+      $('body').css({ "background-image":"url(images/11.jpg)"});  
+    });
+
+    $('#green_btn').click(function(){
+      $('body').css({ "background-image":"url(images/22.jpg)"});  
+    });
+
+    $('#blue_btn').click(function(){
+      $('body').css({ "background-image":"url(images/33.jpg)"});  
+    });
+  });
+</script>
+</head>
+<body>
+<input type="button" value="背景一" id="red_btn"><br>
+<input type="button" value="背景二" id="green_btn"><br>
+<input type="button" value="背景三" id="blue_btn"><br>
+<div id="home" data-role="page">
+  <div role="main" class="ui-content">
+    <div class="ui-field-contain">
+      <label for="t1">文字大小</label>
+      <input id="t1" value="16" min="12" max="30" type="range">
+    </div>
+    <div id="textSize">
+      <b>排球少年！！</b><br>
+      作者古館春一雖然出身於岩手縣，但本作主要以仙台市、仙台站及仙台市體育館等類以仙台地點為創作背景。原因是古館春一在高中畢業後，曾在仙台市的仙台設計專門學校內就讀，其前作是《詭辯學派 四谷學長的怪談》，由於當時的初代責任編輯住在宮城縣，因此以宮城縣作為該作品的故事舞台。本作中對烏野高中和周邊環境的描寫，是基於當地風貌所創作的。高中名稱雖為虛構，但實際上是以當地學校作為藍本。此外，本作有很多場景也跟岩手縣輕米町十分相似。
+      另外，全日本中學校排球選手權大會、全日本排球高等學校選手權大會（春高排球賽）、全國高等學校綜合體育大會排球競技大會（IH預賽）等實際存在的大賽，在作品中也有展現。
+      在初中和高中時代，古館春一曾是排球部的攔中手[2]。古館在連載之前就一直希望可以描繪一套以排球作為題材的作品，但是，責任編輯建議連載排球漫畫須有一定實力，因此古館春一選擇先創作另一套作品《四谷學長》。在《四谷學長》的連載完結後，古館春一以取得排球漫畫連載為目標，開始在《少年JUMP NEXT!》2011冬季增刊版上刊載單編，並接下來在《週刊少年JUMP》的2011年20、21合併號上繼續刊載單編。雖然後來古館春一取得連載許可，但最初繪好的第1話因情節過於豐富，所以才通過逐集整理，變成現在這個樣子。單編刊載一年之後，經過細緻推敲，本作品最終在《週刊少年JUMP》2012年12號開始正式連載。2020年7月20日，在日本發行的《週刊少年Jump》33・34合併號中迎接最終回的連載，為八年半的連載畫上句點。為了紀念作品滿10週年，2022年4月25日發行的《週刊少年Jump》21・22合併號刊載了全新單編「特別番外篇 祭典再次舉辦」（特別番外編 祭り再び）。
+    </div>
+  </div>
+</div>
+</body>
+</html>

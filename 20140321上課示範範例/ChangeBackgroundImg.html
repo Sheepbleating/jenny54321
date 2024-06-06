@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <script src="jquery-3.7.1.min.js"></script>
+<title>用按鈕換背景顏色</title>
+	<script>
+		$(document).ready(function() {
+    
+        $('#red_btn').click(function(){
+            $('body').css({ "background-image":"url(images/01.jpg)"});  
+      
+        });
+		$('#green_btn').click(function(){
+            $('body').css({ "background-image":"url(images/02.jpg)"});  
+      
+        });
+			
+		$('#blue_btn').click(function(){
+            $('body').css({ "background-image":"url(images/03.jpg)"});  
+      
+        });
+
+        
+});
+
+  </script>
+</head>
+
+<body>
+	<input type="button" value="PIC1" id="red_btn"><br>
+	<input type="button" value="PIC2" id="green_btn"><br>
+	<input type="button" value="PIC3" id="blue_btn"><br>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <script src="jquery-3.7.1.min.js"></script>
+<title>讓對應的文字不見</title>
+	<script>
+		$(document).ready(function() {
+          var color_name;
+        $('#red_btn').click(function(){
+           $('#red_text').css({ "background-color":"red"});
+		   $('#green_text').css({ "background-color":"#BBB9B9"});
+		   $('#blue_text').css({ "background-color":"#BBB9B9"});
+        });
+			
+		$('#green_btn').click(function(){
+          $('#green_text').css({ "background-color":"green"});
+		  $('#red_text').css({ "background-color":"#BBB9B9"});
+		  $('#blue_text').css({ "background-color":"#BBB9B9"});
+        });
+			
+		$('#blue_btn').click(function(){
+          $('#blue_text').css({ "background-color":"blue"});
+	      $('#green_text').css({ "background-color":"#BBB9B9"});
+		  $('#red_text').css({ "background-color":"#BBB9B9"});
+      
+        });
+
+});
+
+  </script>
+</head>
+
+<body>
+	<input type="button" value="red" id="red_btn"><br>
+	<input type="button" value="green" id="green_btn"><br>
+	<input type="button" value="blue" id="blue_btn"><br>
+	<div id="red_text" style="font-size:30px; background:#BBB9B9;">red</div>
+    <div id="green_text" style="font-size:30px; background:#BBB9B9; ">green</div>
+    <div id="blue_text" style="font-size:30px; background:#BBB9B9; ">blue</div>
+</body>
+</html>
